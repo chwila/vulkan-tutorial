@@ -10,11 +10,14 @@ class HelloTriangleApplication {
 
     private:
         GLFWwindow *window;
+        VkInstance instance;
 
         void initWindow();
         void initVulkan();
         void mainLoop();
         void cleanup();
+
+        void createInstance();
 };
 
 #endif

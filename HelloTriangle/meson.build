@@ -6,5 +6,6 @@ executable('HelloTriangle',
   ['main.cpp', 'HelloTriangle.cpp'],
   dependencies: [
     dependency('glfw3'),
+    dependency('vulkan'),
   ],
   install : true)
